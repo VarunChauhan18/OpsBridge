@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>OpsBridge | Dashboard</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>OpsBridge</h1>
+                <p>Incidents and Service Recovery Platform</p>
+            </div>
+
+            <nav>
+                <a href="index.html" aria-current="page">Dashboard</a>
+                <a href="incidents.html">Incidents</a>
+                <a href="report-incident.html">Report a Incident</a>
+            </nav>
+        </header>
+        <main>
+            <section class="page_details">
+                <h2>Dashboard</h2>
+                <p>Overview of current incident status and recent activity.</p>
+            </section>
+            <div class="cards_section">
+                <div class="dashboard_cards">
+                    <div class="cards_image" id="open_incident_image">
+                        <img src="/assests/open-incidents.svg" width="60px" alt="open incidents">
+                    </div>
+                    <div class="cards_details" id="open_incident_details">
+                        <p class="incident_status">Open Incidents</p>
+                        <p class="incident_number">8</p>
+                        <p class="incident_other_detail">Require Investigation</p>
+                    </div>
+                </div>
+
+                <div class="dashboard_cards">
+                    <div class="cards_image" id="critical_incident_image">
+                        <img src="/assests/critical-incidents.svg" width="60px" alt="critical incidents">
+                    </div>
+                    <div class="cards_details" id="critical_incident_details">
+                        <p class="incident_status">Critical Incidents</p>
+                        <p class="incident_number">2</p>
+                        <p class="incident_other_detail">Need immediate attention</p>
+                    </div>
+                </div>
+
+                <div class="dashboard_cards">
+                    <div class="cards_image" id="resolved_incident_image">
+                        <img src="/assests/resolved-today.svg" width="60px" alt="resolved incidents">
+                    </div>
+                    <div class="cards_details" id="resolved_incident_details">
+                        <p class="incident_status">Resolved Today</p>
+                        <p class="incident_number">5</p>
+                        <p class="incident_other_detail">Closed in the last 24 hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="incident_table_section">
+                <div class="incident_table_details">
+                    <h3>Recent Incidents</h3>
+                    <div class="view_all_incident_section">
+                        <a href="incidents.html">View all incidents</a>
+                        <img src="/assests/right-arrow.svg" width="15px" alt="right arrow">
+                    </div>
+                </div>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Priority</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Reported</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>INC-1001</td>
+                                <td>Email service not working</td>
+                                <td><span class="badge priority-high">High</span></td>
+                                <td><span class="badge status-open">Open</span></td>
+                                <td>March 10, 2025 09:14</td>
+                                <td><a href="index.html">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>INC-1002</td>
+                                <td>Cannot access shared drive</td>
+                                <td><span class="badge priority-medium">Medium</span></td>
+                                <td><span class="badge status-investigating">Investigating</span></td>
+                                <td>March 10, 2025 08:47</td>
+                                <td><a href="index.html">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>INC-1003</td>
+                                <td>Application error on login</td>
+                                <td><span class="badge priority-critical">Critical</span></td>
+                                <td><span class="badge status-open">Open</span></td>
+                                <td>March 10, 2025 07:32</td>
+                                <td><a href="index.html">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>INC-1004</td>
+                                <td>Printer not working</td>
+                                <td><span class="badge priority-low">Low</span></td>
+                                <td><span class="badge status-resolved">Resolved</span></td>
+                                <td>March 9, 2025 16:21</td>
+                                <td><a href="index.html">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>INC-1005</td>
+                                <td>Slow network performance</td>
+                                <td><span class="badge priority-medium">Medium</span></td>
+                                <td><span class="badge status-investigating">Investigating</span></td>
+                                <td>March 9, 2025 14:08</td>
+                                <td><a href="index.html">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-section">
+                <div class="copyright-section">
+                    <div class="copyright-img-div">
+                        <img src="/assests/copyright.svg" width="13px" alt="copyright">
+                        <a href="index.html">2025 OpsBridge.</a>
+                        <p>All rights reserved.</p>
+                    </div>
+                </div>
+                <div>
+                    <p>IT Incident Management</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

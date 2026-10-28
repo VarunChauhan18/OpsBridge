@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Critical incidents</title><desc id="desc">Red warning symbol on a pale red circular background.</desc>
+  <circle cx="48" cy="48" r="39" fill="#FFE5E5"/>
+  <g fill="none" stroke="#E32626" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="48" cy="48" r="19"/><path d="M48 37v14"/><circle cx="48" cy="59" r="1.8" fill="#E32626" stroke="none"/>
+  </g>
+</svg>

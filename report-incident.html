@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>OpsBridge | Report Incident</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>OpsBridge</h1>
+                <p>Incidents and Service Recovery Platform</p>
+            </div>
+
+            <nav>
+                <a href="index.html" aria-current="page">Dashboard</a>
+                <a href="incidents.html">Incidents</a>
+                <a href="report-incident.html">Report a Incident</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Report a new Incident</h2>
+            <p>Provide the details of the Incident</p>
+
+            <form action="submit" method="get" class="report-form"
+                <div>
+                    <label for="incident_title">Incident Title</label>
+                    <input 
+                    type="text"
+                    id="incident_title"
+                    maxlength="100"
+                    required
+                    >
+                </div>
+
+                <div>
+                    <label for="incident_description">Incident Description</label>
+                    <input
+                    type="text"
+                    id="incident_description"
+                    rows=5
+                    required
+                    >
+                </div>
+
+                <div>
+                    <label for="severity_level">Severity Level</label>
+                    <select name="severity" id="severity_level" required>
+                        <option value="">Select Severity Level</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                        <option value="critical">Critical</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="affected_service">Affected Service</label>
+                    <select name="affected_service" id="affected_service" required>
+                        <option value="">Select Affected Service</option>
+                        <option value="payments">Payment Service</option>
+                        <option value="identity">Identity and Login</option>
+                        <option value="reporting">Reporting Service</option>
+                        <option value="network">Corporate Network</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="reporter_name">Reporter Name</label>
+                    <input
+                    type="text"
+                    id="reporter_name"
+                    name="reporter_name"
+                    required
+                    >
+                </div>
+
+                <div>
+                    <label for="contact_email">Contact Email</label>
+                    <input
+                    type="email"
+                    id="contact_email"
+                    name="contact_email"
+                    required
+                    >
+                </div>
+
+                <button type="submit">Submit Incident Details</button>
+            </form>
+
+            <a href="index.html">Cancel and Return to Dashboard</a>
+        </main>
+        <footer>
+            <p>OpsBridge - Service Reliability Workspace</p>
+        </footer>
+    </body>
+</html>
